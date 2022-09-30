@@ -1,0 +1,248 @@
+@media (min-width: 901px) {
+    .container {
+      display: grid;
+      height:100vh;
+      grid-template-columns: 300px auto;
+      grid-template-rows: 200px 50px 600px 80px;
+      grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "nv nv nv nv nv nv nv nv"
+        "sd main main main main main main main"
+        "ft ft ft ft ft ft ft ft ";
+    }
+
+    html,body {
+      color: white;
+      font-size: 24px;
+      /*background-image: url(https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg);
+          background-image: cover ;*/
+      text-decoration: none;
+      height:100%;
+    }
+   
+    
+    .header {
+      grid-area: hd;
+      color: white;
+      
+      
+    }
+
+  
+  
+  
+   h1 {
+     color: hsl(173, 51%, 19%);
+     background-color: rgba(203, 209, 143, 0.6);
+     text-align: center;
+     font-size:72px ;
+    }
+  
+  
+   ul{margin-top: 0%;}
+  
+   ul > li {
+     overflow: hidden;
+     list-style-type: none;
+     float: left;
+     min-width:60px;
+     padding-left:100px;
+   }
+   
+      
+  ul li a {
+     text-decoration: none;
+     display: block;
+     color: white;
+     text-align: center;
+     margin-top: 5px;
+     margin-bottom: 5px;
+    }
+      
+  ul li a:hover {
+    color: rgba(203, 209, 143, 0.8);
+    font-style: oblique;
+    border: rgba(203, 209, 143, 0.6) 2px solid;
+    }
+      
+  .nav {
+    grid-area: nv;
+    background-color:/*rgb(111, 1,0,0.7);*/ rgba(0, 0, 0, 0.8);
+    margin: 0%;
+    padding: 0%;
+    font-size: 28.8px;
+    }
+      
+     
+  .footer {
+    grid-area: ft;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+      }
+  
+  .fa {
+      padding: 8px;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 20%;
+        margin: 3px;
+        justify-content: center;
+      }
+      
+   
+    h2 {
+        color: hsl(173, 51%, 19%);
+        margin: 5px;
+        text-align: center;
+        font-size: 40px;
+      }
+
+    h3{
+        color: hsl(173, 51%, 19%);
+        margin: 5px;
+        text-align: center;
+        font-size: 24px;
+
+    }
+
+
+  
+      
+  .author {
+        display: grid;
+        height: 500px;
+        width: 250px;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 30% 40% 5%;
+        grid-template-areas:
+          "hdr"
+          "pic"
+          "inf"
+          "sub";
+        /*border-radius: 20%;*/
+        justify-content: center;
+        grid-gap:10px;
+        padding: 2px;
+        background-color: rgba(203, 209, 143, 0.6);
+        opacity: 0.9;
+        
+      }
+      
+      #hdr {
+        grid-area: hdr;
+        display: flex;
+        flex: wrap;
+        justify-content: center;
+        text-decoration: underline;
+        color: hsl(173, 51%, 19%);
+        font-size: 28px;
+      }
+      
+      #avatar {
+        grid-area: pic;
+        display: flex;
+        flex: wrap;
+        background-image: url(../image/Authorpic.jpeg);
+        
+        width: 180px;
+        height: 200px;
+        background-size: cover;
+        border-radius: 40%;
+        margin-top:0%;
+        margin:auto;
+        opacity: 85%;
+      }
+      #info {
+        grid-area: inf;
+        display: block;
+        justify-content: center;
+        margin-top: 0%;
+        text-align: center;
+        font-size: 18px;
+        color: hsl(173, 51%, 19%);
+        margin-top: 50px;
+      }
+      
+      #subscribe {
+        margin-top: 15px;
+        grid-area: sub;
+        text-align: center;
+        width: auto;
+        margin-top:50px;
+      }
+
+      a>button{
+        font-size: 8px;
+      }
+      
+      
+      a > button:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.201);
+        border: 15px rgba(0, 0, 0);
+        text-decoration: none;
+      }
+      
+      
+      .sidebar {
+        grid-area: sd;
+      }
+      
+      .content {
+        grid-area: main;
+      }
+      
+      #nested-grid {
+        display: grid;
+        width: 100%;
+        grid-template-rows: 20% 80%;
+        align-items: center;
+        justify-content: center;
+        grid-template-areas:
+          "head"
+          "cc";
+        padding: 4px;
+        
+        
+      }
+
+      #card {
+        width: 550px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5%;
+        float: left;
+        overflow: hidden;
+        
+          
+        }
+      
+      #heading {
+        grid-area: head;
+        padding:0%;
+        margin:10px;
+      }
+      
+      #cnt {
+        grid-area: cc;
+        display: flex;
+        flex: wrap;
+        width: 550px;
+        height: 300px;
+        color: #8e964d;
+        word-spacing: 5px;
+        line-height: 35px;
+        padding:0%;
+       
+        
+      }
+
+  
+  form{font-size: 15px;}
+      
+    }   
