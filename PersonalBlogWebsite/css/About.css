@@ -155,7 +155,7 @@ ul li a:hover {
     grid-area: pic;
     display: flex;
     flex: wrap;
-    background-image: url(D:/PersonalBlogWebsite/image/Authorpic.jpeg);
+    background-image: url(../image/Authorpic.jpeg);
     min-width: 120px;
         min-height: 150px;
     background-size: cover;
