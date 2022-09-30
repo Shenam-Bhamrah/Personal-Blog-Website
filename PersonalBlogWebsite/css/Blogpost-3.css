@@ -1,226 +1,215 @@
 @media (min-width: 901px) {
-    .container {
-      display: grid;
-      height:100vh;
-      grid-template-columns: 300px auto;
-      grid-template-rows: 200px 50px 700px 80px;
-      grid-template-areas:
-        "hd hd hd hd hd hd hd hd"
-        "nv nv nv nv nv nv nv nv"
-        "sd main main main main main main main"
-        "ft ft ft ft ft ft ft ft ";
-    }
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 200px 50px 700px 80px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "nv nv nv nv nv nv nv nv"
+      "sd main main main main main main main"
+      "ft ft ft ft ft ft ft ft ";
+  }
 
-    
+  .header {
+    grid-area: hd;
+    color: white;
+  }
 
-    
-    .header {
-      grid-area: hd;
-      color: white;
-      
-    }
+  h1 {
+    color: hsl(173, 51%, 19%);
+    background-color: rgba(203, 209, 143, 0.6);
+    text-align: center;
+    font-size: 72px;
+  }
 
-  
-  
-  
-   h1 {
-     color: hsl(173, 51%, 19%);
-     background-color: rgba(203, 209, 143, 0.6);
-     text-align: center;
-     font-size:72px;
-    }
+  h2 {
+    font-size: 40px;
+  }
 
-    h2{
-      font-size:40px;
-    }
-  
-  
-   ul{margin-top: 0%;}
-  
-   ul > li {
-     overflow: hidden;
-     list-style-type: none;
-     float: left;
-     min-width:80px;
-     padding-left:100px;
-   }
-      
+  ul {
+    margin-top: 0%;
+  }
+
+  ul > li {
+    overflow: hidden;
+    list-style-type: none;
+    float: left;
+    min-width: 80px;
+    padding-left: 100px;
+  }
+
   ul li a {
-     text-decoration: none;
-     display: block;
-     color: white;
-     text-align: center;
-     margin-top: 5px;
-     margin-bottom: 5px;
-    }
-      
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
   ul li a:hover {
     color: rgba(203, 209, 143, 0.8);
     font-style: oblique;
     border: rgba(203, 209, 143, 0.6) 2px solid;
-    }
-      
+  }
+
   .nav {
     grid-area: nv;
     background-color:/*rgb(111, 1,0,0.7);*/ rgba(0, 0, 0, 0.8);
     margin: 0%;
     padding: 0%;
     font-size: 28.8px;
-    }
-      
-     
+  }
+
   .footer {
     grid-area: ft;
     background-color: rgba(0, 0, 0, 0.8);
     font-size: 18px;
-      }
-  
+  }
+
   .fa {
-      padding: 8px;
-        width: 15px;
-        height: 15px;
-        text-align: center;
-        text-decoration: none;
-        border: 1px solid white;
-        border-radius: 20%;
-        margin: 3px;
-        justify-content: center;
-      }
-      h3 {
-        color: hsl(173, 51%, 19%);
-        margin: 5px;
-        font-size: 24px;
-      }
-      
-      .author {
-        display: grid;
-        height: 550px;
-        width: 300px;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 40% 40% 5%;
-        grid-template-areas:
-          "hdr"
-          "pic"
-          "inf"
-          "sb";
-        /*border-radius: 20%;*/
-        padding: 2px;
-        justify-content: center;
-      
-        margin: 10px;
-        margin-top:50px;
-        background-color: rgba(203, 209, 143, 0.6);
-        opacity: 0.9;
-      }
-      
-      #hdr {
-        grid-area: hdr;
-        display: flex;
-        flex: wrap;
-        justify-content: center;
-        text-decoration: underline;
-        color: hsl(173, 51%, 19%);
-        font-size: 28px;
-      }
-      
-      #avatar {
-        grid-area: pic;
-        display: flex;
-        flex: wrap;
-        background-image: url(../image/Authorpic.jpeg);
-        width: 180px;
-        height: 200px;
-        background-size: cover;
-        border-radius: 40%;
-        margin: auto;
-        opacity: 85%;
-      }
-      #info {
-        grid-area: inf;
-        display: block;
-        justify-content: center;
-        margin-top: 0%;
-        font-size: 0.5em;
-        text-align: center;
-        color: hsl(173, 51%, 19%);
-        font-size: 18px;
-      }
-      
-      textarea {
-        resize: none;
-      }
-      
-      #submit {
-        grid-area: sb;
-        text-align: center;
-        width: auto;
-        margin:10px;
+    padding: 8px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 20%;
+    margin: 3px;
+    justify-content: center;
+  }
+  h3 {
+    color: hsl(173, 51%, 19%);
+    margin: 5px;
+    font-size: 24px;
+  }
 
-      }
+  .author {
+    display: grid;
+    height: 550px;
+    width: 300px;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 40% 40% 5%;
+    grid-template-areas:
+      "hdr"
+      "pic"
+      "inf"
+      "sb";
+    /*border-radius: 20%;*/
+    padding: 2px;
+    justify-content: center;
 
-      a>button{
-        font-size: 15px;
-      }
-      
-      a > button:hover {
-        color: white;
-        background-color: rgba(0, 0, 0, 0.201);
-        border: 15px rgba(0, 0, 0);
-        text-decoration: none;
-      }
-      
-      .sidebar {
-        grid-area: sd;
-      }
-      
-      .content {
-        grid-area: main;
-      }
-      
-      #nested-grid {
-        display: grid;
-        width: 100%;
-        grid-template-rows: 10% 35% 40%;
-        grid-gap: 10px;
-        align-items: center;
-        justify-content: center;
-        padding: 4px;
-        grid-template-areas:
-          "head"
-          "img"
-          "cc";
-      }
-      
-      #heading {
-        grid-area: head;
-        text-align: center;
-        color: hsl(173, 51%, 19%);
-        
-      }
-      
-      #im {
-        grid-area: img;
-        background-image: url(https://imagesvc.meredithcorp.io/v3/jumpstartpure/image?url=https://cf-images.us-east-1.prod.boltdns.net/v1/static/3281700261001/6a204d6b-0fe4-45c8-a63e-b2e09c11de32/a13648d5-c0b9-4ded-8ecd-89aad8634e6c/1280x720/match/image.jpg&w=1280&h=720&q=90&c=cc);
-        background-size: cover;
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex: wrap;
-        border: black solid;
-        margin:auto;
-      }
-      
-      #cnt {
-        grid-area: cc;
-        display: block;
-        width: 850px;
-        height: 250px;
-        color: #8e964d;
-        margin-top: 20px;
-        font-size: 18px;
-        word-spacing: 2px;
-        line-height: 18px;
-        
-} 
+    margin: 10px;
+    margin-top: 50px;
+    background-color: rgba(203, 209, 143, 0.6);
+    opacity: 0.9;
+  }
 
+  #hdr {
+    grid-area: hdr;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    text-decoration: underline;
+    color: hsl(173, 51%, 19%);
+    font-size: 28px;
+  }
+
+  #avatar {
+    grid-area: pic;
+    display: flex;
+    flex: wrap;
+    background-image: url(../image/Authorpic.jpeg);
+    width: 180px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 40%;
+    margin: auto;
+    opacity: 85%;
+  }
+  #info {
+    grid-area: inf;
+    display: block;
+    justify-content: center;
+    margin-top: 0%;
+    font-size: 0.5em;
+    text-align: center;
+    color: hsl(173, 51%, 19%);
+    font-size: 18px;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  #submit {
+    grid-area: sb;
+    text-align: center;
+    width: auto;
+    margin: 10px;
+  }
+
+  a > button {
+    font-size: 15px;
+  }
+
+  a > button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.201);
+    border: 15px rgba(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .sidebar {
+    grid-area: sd;
+  }
+
+  .content {
+    grid-area: main;
+  }
+
+  #nested-grid {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 10% 35% 40%;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    grid-template-areas:
+      "head"
+      "img"
+      "cc";
+  }
+
+  #heading {
+    grid-area: head;
+    text-align: center;
+    color: hsl(173, 51%, 19%);
+  }
+
+  #im {
+    grid-area: img;
+    background-image: url(https://imagesvc.meredithcorp.io/v3/jumpstartpure/image?url=https://cf-images.us-east-1.prod.boltdns.net/v1/static/3281700261001/6a204d6b-0fe4-45c8-a63e-b2e09c11de32/a13648d5-c0b9-4ded-8ecd-89aad8634e6c/1280x720/match/image.jpg&w=1280&h=720&q=90&c=cc);
+    background-size: cover;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex: wrap;
+    border: black solid;
+    margin: auto;
+  }
+
+  #cnt {
+    grid-area: cc;
+    display: block;
+    width: 850px;
+    height: 250px;
+    color: #8e964d;
+    margin-top: 20px;
+    font-size: 18px;
+    word-spacing: 2px;
+    line-height: 18px;
+  }
 }
