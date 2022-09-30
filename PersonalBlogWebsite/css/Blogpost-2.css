@@ -135,7 +135,7 @@
             grid-area: pic;
             display: flex;
             flex: wrap;
-            background-image: url(D:/PersonalBlogWebsite/image/Authorpic.jpeg);
+            background-image: url(../image/Authorpic.jpeg);
             width: 160px;
             height: 230px;
             background-size: cover;
