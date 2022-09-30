@@ -136,7 +136,7 @@ h3 {
   grid-area: pic;
   display: flex;
   flex: wrap;
-  background-image: url(D:/PersonalBlogWebsite/image/Authorpic.jpeg);
+  background-image: url(../image/Authorpic.jpeg);
   width: 120px;
   height: 150px;
   background-size: cover;
