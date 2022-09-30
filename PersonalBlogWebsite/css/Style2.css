@@ -133,7 +133,7 @@
         grid-area: pic;
         display: flex;
         flex: wrap;
-        background-image: url(D:/PersonalBlogWebsite/image/Authorpic.jpeg);
+        background-image: url(../image/Authorpic.jpeg);
         min-width: 160px;
         min-height: 230px;
         background-size: cover;
